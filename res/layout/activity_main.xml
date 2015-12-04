@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/linear_style" >
+
+    <FrameLayout
+        android:id="@+id/main_fl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:ignore="Suspicious0dp" >
+    </FrameLayout>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#e7e7e7"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        >
+        <RelativeLayout 
+            android:id="@+id/rlHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+            <ImageView 
+                android:id="@+id/ivhome"
+                android:layout_width="28dp"
+                android:layout_height="16dp"
+                android:background="@drawable/home_check_false"
+                android:layout_centerHorizontal="true"
+                />
+            
+            <TextView 
+                android:id="@+id/tvHome"
+                style="@style/home_btm_tv_style"
+                android:text="首页"
+                android:layout_below="@id/ivhome"
+                android:layout_marginTop="3dp"
+                 android:layout_centerHorizontal="true"
+                />
+            
+        </RelativeLayout>
+        
+         <RelativeLayout 
+             android:id="@+id/rlLight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+            <ImageView 
+                android:id="@+id/ivLight"
+                android:layout_width="28dp"
+                android:layout_height="16dp"
+                android:background="@drawable/light_check_false"
+                android:layout_centerHorizontal="true"
+                />
+            
+            <TextView 
+                android:id="@+id/tvLight"
+                style="@style/home_btm_tv_style"
+                android:text="闪电配"
+                android:layout_below="@id/ivLight"
+                android:layout_marginTop="3dp"
+                 android:layout_centerHorizontal="true"
+                />
+            
+        </RelativeLayout>
+        
+          <RelativeLayout 
+              android:id="@+id/rlMarket"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+            <ImageView 
+                android:id="@+id/ivMarket"
+                android:layout_width="28dp"
+                android:layout_height="16dp"
+                android:background="@drawable/market_check_false"
+                android:layout_centerHorizontal="true"
+                />
+            
+            <TextView 
+                android:id="@+id/tvMarket"
+                style="@style/home_btm_tv_style"
+                android:text="市场"
+                android:layout_below="@id/ivMarket"
+                android:layout_marginTop="3dp"
+                 android:layout_centerHorizontal="true"
+                />
+            
+        </RelativeLayout>
+        
+          
+           <RelativeLayout 
+               android:id="@+id/rlShop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+            <ImageView 
+                android:id="@+id/ivShop"
+                android:layout_width="28dp"
+                android:layout_height="16dp"
+                android:background="@drawable/shop_check_false"
+                android:layout_centerHorizontal="true"
+                />
+            
+            <TextView 
+                android:id="@+id/tvShop"
+                style="@style/home_btm_tv_style"
+                android:text="购物车"
+                android:layout_below="@id/ivShop"
+                android:layout_marginTop="3dp"
+                 android:layout_centerHorizontal="true"
+                />
+            
+        </RelativeLayout>
+        
+           
+            <RelativeLayout
+                android:id="@+id/rlMe" 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+            <ImageView 
+                android:id="@+id/ivMe"
+                android:layout_width="28dp"
+                android:layout_height="16dp"
+                android:background="@drawable/me_check_false"
+                android:layout_centerHorizontal="true"
+                />
+            
+            <TextView 
+                android:id="@+id/tvMe"
+                style="@style/home_btm_tv_style"
+                android:text="我的"
+                android:layout_below="@id/ivMe"
+                android:layout_marginTop="3dp"
+                 android:layout_centerHorizontal="true"
+                />
+            
+        </RelativeLayout>
+        
+    </LinearLayout>
+</LinearLayout>

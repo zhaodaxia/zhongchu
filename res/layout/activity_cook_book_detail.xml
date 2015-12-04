@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/linear_style"
+    >
+    
+   
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/main_color" >
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="goback"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/top_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="烤鸭"
+            android:textColor="@color/main_text_color"
+            android:textSize="18sp" />
+        
+        <ImageView 
+            android:id="@+id/ivCollect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/shoucang"
+            android:layout_marginRight="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/one_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/zccp_03"
+            android:layout_toLeftOf="@id/ivCollect"
+             />
+    </RelativeLayout>
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            >
+             <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dip" >
+
+                <com.cai.vegetables.view.LoopViewPager
+                    android:id="@+id/vpMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp" >
+                </com.cai.vegetables.view.LoopViewPager>
+
+                <LinearLayout
+                    android:id="@+id/ll_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </RelativeLayout>
+            
+             <TextView style="@style/tv_14_black_color"
+                 android:text="菜名：烤鸡"
+                 android:layout_gravity="center_horizontal"
+                 android:layout_marginTop="10dp"/>
+            
+             <RelativeLayout 
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="5dp"
+                 android:paddingLeft="10dp"
+                 android:paddingRight="10dp"
+                 >
+                
+                 <LinearLayout 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal"
+                     android:layout_centerInParent="true"
+                     >
+                     <TextView style="@style/tv_12_gray_color"
+                         android:text="1213人喜欢"
+                         android:drawableLeft="@drawable/like"
+                         android:drawablePadding="5dp"
+                         android:layout_marginRight="10dp"/>
+                     
+                     <TextView 
+                         android:id="@+id/tvComment"
+                         style="@style/tv_12_gray_color"
+                         android:text="176人已评论"
+                         android:drawableLeft="@drawable/comment"
+                         android:drawablePadding="5dp"
+                         android:layout_marginLeft="10dp"/>
+                     
+                 </LinearLayout>
+                 
+                 <ImageView 
+                     android:id="@+id/tvComm"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="@drawable/edit"
+                     android:layout_alignParentRight="true"
+                     />
+                 
+             </RelativeLayout>
+             <View android:layout_width="match_parent"
+                 android:layout_height="5dp"
+                 android:background="@color/bg_color"
+                 android:layout_marginTop="10dp"/>
+             
+             
+             <LinearLayout 
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:padding="10dp"
+                 >
+                 
+                 <LinearLayout 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal"
+                     android:gravity="center_vertical"
+                     >
+                     
+                     <com.cai.vegetables.widget.CircleImageView 
+                         android:layout_width="36dp"
+                         android:layout_height="36dp"
+                         android:src="@drawable/main_vp"
+                         />
+                     
+                     <TextView 
+                         style="@style/tv_12_gray_color"
+                         android:text="发布人：张厨师"
+                         android:layout_marginLeft="10dp"/>
+                     
+                 </LinearLayout>
+                 
+                 <TextView 
+                         style="@style/tv_12_gray_color"
+                         android:text="非常多的烤鸡翅，非常的香脆，甜蜜"
+                         android:layout_marginTop="5dp"/>
+                 
+                 <LinearLayout 
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal"
+                     android:layout_marginTop="10dp"
+                     >
+                     <LinearLayout 
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:orientation="horizontal"
+                         >
+                         <TextView style="@style/tv_12_gray_color"
+                             android:text="难度："/>
+                         <TextView style="@style/tv_12_black_color"
+                             android:text="中度"/>
+                     </LinearLayout>
+                     
+                      <LinearLayout 
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:orientation="horizontal"
+                         android:layout_marginLeft="40dp"
+                         >
+                         <TextView style="@style/tv_12_gray_color"
+                             android:text="菜系："/>
+                         <TextView style="@style/tv_12_black_color"
+                             android:text="西餐"/>
+                     </LinearLayout>
+                     
+                 </LinearLayout>
+             </LinearLayout>
+             
+             <View 
+                 android:layout_width="match_parent"
+                 android:layout_height="5dp"
+                 android:background="@color/bg_color"
+                 />
+             
+             <LinearLayout 
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:padding="10dp"
+                 >
+                 <TextView style="@style/tv_12_black_color"
+                     android:text="食材"
+                     android:textColor="#ffffff"
+                     android:background="@drawable/xq_22"
+                     android:gravity="center"/>
+                 <com.leaf.library.widget.MyListView 
+                     android:id="@+id/lvSc"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:scrollbars="none"
+                     android:divider="@null"
+                     android:layout_marginTop="10dp"
+                     android:layout_marginLeft="5dp"
+                     ></com.leaf.library.widget.MyListView>
+                 
+                 <TextView style="@style/tv_12_black_color"
+                     android:text="用具"
+                     android:textColor="#ffffff"
+                     android:background="@drawable/xq_25"
+                     android:layout_marginTop="10dp"
+                     android:gravity="center"/>
+                 
+                 <TextView style="@style/tv_12_black_color"
+                     android:text="烤箱，刀，麻绳，小锅"
+                     android:layout_marginTop="5dp"/>
+             </LinearLayout>
+             
+              <View 
+                 android:layout_width="match_parent"
+                 android:layout_height="5dp"
+                 android:background="@color/bg_color"
+                 />
+              
+              <LinearLayout 
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:gravity="center_horizontal"
+                  android:padding="10dp"
+                  >
+                  <TextView 
+                      android:id="@+id/tvBuyFood"
+                      style="@style/tv_14_black_color"
+                      android:textColor="#ffffff"
+                      android:text="一键购买主要食材"
+                      android:gravity="center"
+                      android:layout_marginRight="10dp"
+                      android:background="@drawable/xq_28"/>
+                  
+                  <TextView 
+                      android:id="@+id/tvSeasoning"
+                      style="@style/tv_14_black_color"
+                      android:textColor="#ffffff"
+                      android:text="一键购买调味品"
+                      android:gravity="center"
+                      android:background="@drawable/xq_30"/>
+              </LinearLayout>
+             
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

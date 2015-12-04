@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/bg_color">
+    
+	<include layout="@layout/title_act_layout"/>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#e3e3e3"
+	    android:orientation="horizontal"
+	    android:padding="10dp"
+	    android:layout_marginTop="10dp"
+	    android:gravity="center_vertical"
+	    >
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        >
+	        <TextView 
+	            style="@style/tv_14_black_color"
+	            android:text="卖家已发货"
+	            />
+	        <TextView 
+	            style="@style/tv_12_gray_color"
+	            android:text="预计中午12点前课送达"
+	            />
+	    </LinearLayout>
+	    <RelativeLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        >
+	        <TextView 
+	            style="@style/tv_12_gray_color"
+	            android:text="张家明"
+	            android:id="@+id/tv_orderusername"
+	            android:layout_toLeftOf="@+id/iv_orderphone"
+	            android:layout_marginTop="10dp"
+	            />
+	        <TextView 
+	            style="@style/tv_12_gray_color"
+	            android:text="18888888888"
+	           android:layout_toLeftOf="@+id/iv_orderphone"
+	            android:layout_below="@+id/tv_orderusername"
+	            />
+	        <ImageView 
+	        android:id="@+id/iv_orderphone"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/pdcg_06"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        />
+	    </RelativeLayout>
+	</LinearLayout>
+	
+	<RelativeLayout 
+         android:id="@+id/rlAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+		android:padding="10dp"
+		android:layout_marginTop="10dp"
+        >
+        
+        <ImageView 
+            android:id="@+id/ivLocation"
+            android:layout_width="20dp"
+            android:layout_height="27dp"
+            android:background="@drawable/shop_location"
+            android:layout_centerVertical="true"
+            />
+        
+        <ImageView style="@style/arrow_right"
+            android:id="@+id/ivArrow"
+            android:layout_alignParentRight="true"/>
+
+       <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_gravity="center_vertical"
+           android:layout_toRightOf="@id/ivLocation"
+            android:layout_toLeftOf="@id/ivArrow"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+           >
+           <RelativeLayout 
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               >
+               <TextView style="@style/tv_14_black_color"
+                   android:text="收货人：冷面书生"/>
+               
+               <TextView style="@style/tv_14_black_color"
+                   android:text="138899999933"
+                   android:layout_alignParentRight="true"/>
+           </RelativeLayout>
+           
+           <TextView 
+              style="@style/tv_14_black_color"
+              android:text="收获地址：上海 上海市 青浦区 徐泾镇 华徐公路888号"
+              android:layout_marginTop="3dp"
+               />
+           
+       </LinearLayout>
+    </RelativeLayout>
+   <LinearLayout 
+        style="@style/ll_padding10_item"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        >
+        <TextView 
+            style="@style/tv_12_gray_color"
+            android:text="下单时间:2015-09-15 14:34:21"
+            />
+
+    </LinearLayout>
+   		 <View 
+            style="@style/divild"
+            />
+	<RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="10dp"
+        >
+          <RelativeLayout 
+              android:id="@+id/rlIv"
+                android:layout_width="102dp"
+                android:layout_height="62dp"
+                android:background="@drawable/image_bg"
+                >
+            <ImageView 
+                android:id="@+id/iv"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:background="@drawable/main_vp"
+                android:layout_centerInParent="true"
+                />
+           
+            </RelativeLayout>
+        
+           <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/rlIv"
+                >
+                <TextView style="@style/tv_14_main_color"
+                    android:text="纯正山东金针菇"
+                    />
+                
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                     android:layout_marginTop="5dp"
+                    >
+                <TextView style="@style/tv_12_gray_color"
+                    android:text="单价："
+                   
+                    />
+                <TextView style="@style/tv_14_orange_color"
+                    android:text="2.88"
+                    />
+                <TextView style="@style/tv_12_gray_color"
+                    android:text="元／斤"
+                    />
+                </LinearLayout>
+                
+                <RelativeLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView style="@style/tv_12_gray_color"
+                    android:text="原价：3.8元／斤"
+                     android:layout_marginTop="5dp"
+                     
+                    />
+                </RelativeLayout>
+                
+            </LinearLayout>
+    </RelativeLayout>
+    
+	   	<View 
+            style="@style/divild"
+            />
+	   	<RelativeLayout 
+	   	    android:layout_width="match_parent"
+	   	    android:layout_height="wrap_content"
+	   	    android:background="@color/white"
+	   	    android:padding="10dp"
+	   	    >
+		<TextView 
+			style="@style/tv_12_gray_color"
+			android:text="共计5件商品  合计：14.40元  运费：5.00元"
+			android:id="@+id/tv_orderdeatil"
+			 />
+		<TextView 
+			style="@style/tv_14_gray_color"
+			android:text="实付款(含运费)"
+			android:layout_below="@+id/tv_orderdeatil"
+			android:layout_marginTop="5dp"
+			 />		
+		<TextView 
+		    style="@style/tv_14_orange_color"
+		    android:text="19.00元"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginTop="22dp"
+		    />
+	   	</RelativeLayout>
+	   	
+	   	<LinearLayout 
+			style="@style/ll_padding10_item"
+			android:layout_marginTop="10dp"
+	   	    >
+	   	    <LinearLayout 
+	   	        android:layout_weight="1"
+	   	        android:layout_width="0dp"
+	   	        android:layout_height="wrap_content"
+	   	        android:orientation="horizontal"
+	   	        android:gravity="center"
+	   	        >
+               <ImageView 
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/od_3"
+                   android:layout_marginRight="5dp"
+                   />
+	   	       <TextView 
+	   	           style="@style/tv_14_black_color"
+	   	           android:textColor="#58bde9"
+	   	           android:text="联系客服"
+	   	           />
+	   	    </LinearLayout>
+	   	    <View 
+	   	        android:layout_width="1dp"
+	   	        android:layout_height="match_parent"
+	   	        android:background="@color/bg_color"
+	   	        />
+	   	   <LinearLayout 
+	   	        android:layout_weight="1"
+	   	        android:layout_width="0dp"
+	   	        android:layout_height="wrap_content"
+	   	        android:orientation="horizontal"
+	   	        android:gravity="center"
+	   	        >
+	   	       <ImageView 
+	   	           android:layout_width="wrap_content"
+	   	           android:layout_height="wrap_content"
+	   	           android:background="@drawable/od_1"
+	   	           android:layout_marginRight="5dp"
+	   	           />
+	   	       <TextView 
+	   	           style="@style/tv_14_orange_color"
+	   	           android:text="联系商家"
+	   	           />
+	   	    </LinearLayout>
+	   	</LinearLayout>
+	   	
+	   	<View 
+	   	    android:layout_weight="1"
+	   	    android:layout_width="0dp"
+	   	    android:layout_height="0dp"
+	   	    />
+	   <LinearLayout 
+			style="@style/ll_padding10_item"
+	   	    >
+	   	    <LinearLayout 
+	   	        android:layout_weight="1"
+	   	        android:layout_width="0dp"
+	   	        android:layout_height="wrap_content"
+	   	        android:orientation="horizontal"
+	   	        android:gravity="center"
+	   	        android:layout_marginLeft="20dp"
+	   	        >
+	   	       <TextView 
+					style="@style/order_whitebg"
+					android:text="取消订单"
+	   	           />
+	   	    </LinearLayout>
+
+	   	   <LinearLayout 
+	   	        android:layout_weight="1"
+	   	        android:layout_width="0dp"
+	   	        android:layout_height="wrap_content"
+	   	        android:orientation="horizontal"
+	   	        android:gravity="center"
+	   	        android:layout_marginRight="20dp"
+	   	        >
+	   	       <TextView 
+					style="@style/order_greenbg"
+					android:text="确认收货"
+	   	           />
+	   	    </LinearLayout>
+	   	</LinearLayout>
+</LinearLayout>

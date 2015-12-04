@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/linear_style">
+    
+    <com.cai.vegetables.view.pulltorefresh.PullToRefreshGridView
+        android:id="@+id/gv_collect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:numColumns="2"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5.0px"
+        android:paddingLeft="5dp"
+        android:background="#e7e7e7"
+        >
+    </com.cai.vegetables.view.pulltorefresh.PullToRefreshGridView>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/linear_style"
+    >
+    
+    <include layout="@layout/title_act_layout"/>
+      <com.cai.vegetables.view.pulltorefresh.PullToRefreshListView
+        android:id="@+id/plv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"
+      >
+    </com.cai.vegetables.view.pulltorefresh.PullToRefreshListView>
+    
+      <include layout="@layout/layout_bottom"/>
+</LinearLayout>

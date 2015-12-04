@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/linear_style" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/main_color"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+        
+        <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/main_text_color"
+        android:textSize="18sp"
+        android:text="企业采购" />
+        <LinearLayout
+            android:id="@+id/llScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:background="@drawable/scan_home" />
+
+            <TextView
+                style="@style/tv_14_main_color"
+                android:layout_marginTop="3dp"
+                android:text="扫一扫" />
+        </LinearLayout>
+    </RelativeLayout>
+    
+     <include
+                android:layout_width="fill_parent"
+                android:layout_height="36dp"
+                layout="@layout/search_edit" 
+                android:layout_margin="10dp"
+                />
+
+    <ListView 
+        
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:id="@+id/mark_list"
+	    android:scrollbars="none"
+	    ></ListView>
+</LinearLayout>

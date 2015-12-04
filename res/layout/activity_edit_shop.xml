@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/linear_style"
+    >
+    <include layout="@layout/title_act_layout"/>
+    
+    <ListView 
+        android:id="@+id/lvShop"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        ></ListView>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        >
+         <CheckBox 
+            android:id="@+id/cbAll"
+           style="@style/cb_style"
+            android:checked="false"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#919191"
+            android:text="全选"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/cbAll"
+            android:layout_centerVertical="true"
+            />
+        
+       
+        
+        <TextView 
+            android:id="@+id/tvDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="删除"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+        
+          <TextView 
+              android:id="@+id/tvColl"
+            android:layout_width="105dp"
+            android:layout_height="33dp"
+            android:textSize="16sp"
+            android:text="移到收藏"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:background="@drawable/collect_bg"
+            android:layout_toLeftOf="@id/tvDelete"
+            />
+        
+    </RelativeLayout>
+</LinearLayout>

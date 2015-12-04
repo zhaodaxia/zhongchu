@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/linear_style" >
+
+    <include layout="@layout/title_act_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/publish_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/publish_success" />
+
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/publish_success"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/tv_16_gray_color"
+                android:text="棒极了！"
+                android:textColor="@color/tv_purple" />
+
+            <TextView
+                style="@style/tv_12_gray_color"
+                android:text="菜谱已经发布成功，请等待审核..." />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <Button
+            android:id="@+id/publish_success_share"
+            style="@style/green_btn"
+            android:text="分享给小伙伴" />
+    </RelativeLayout>
+
+</LinearLayout>

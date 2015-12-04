@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<RelativeLayout 
+	    style="@style/product_item"
+	    android:id="@+id/rl_product_item"
+	    >
+	  <ImageView 
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:id="@+id/iv_foldicon"
+	      android:background="@drawable/ic_launcher"
+	      android:layout_centerVertical="true"
+	      />  
+	   <TextView 
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:id="@+id/tv_foldname"
+	      android:layout_centerVertical="true"
+	       android:layout_toRightOf="@+id/iv_foldicon"
+	       />
+
+	   <ImageView 
+	     style="@style/fold_arrow_right"
+	     android:id="@+id/iv_foldarrow"
+	       />
+	</RelativeLayout>
+	
+	<GridView 
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/foldgrid"
+        android:horizontalSpacing="20dp"
+        android:numColumns="4"
+        android:verticalSpacing="30dp"
+        android:layout_margin="20dp"
+        android:scrollbars="none"
+	    ></GridView>
+</LinearLayout>

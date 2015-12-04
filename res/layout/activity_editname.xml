@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/linear_style"
+    >
+   <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/main_color" >
+      <RelativeLayout
+        android:id="@+id/rl_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:onClick="goback"
+         >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/top_back" />
+    </RelativeLayout>
+    
+      <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/main_text_color"
+        android:textSize="18sp" 
+        />
+      	
+
+    <TextView
+        android:id="@+id/tvRight"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/main_text_color"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/nc_03"
+         />
+    </RelativeLayout>
+
+  <LinearLayout 
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/white"
+      android:layout_marginTop="15dp"
+      >
+   <com.cai.vegetables.widget.ClearEditText 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@null"
+       android:layout_margin="15dp"
+       android:id="@+id/ed_username"
+       />
+   </LinearLayout>
+   
+  <TextView 
+      style="@style/tv_12_gray_color"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="15dp"
+      android:layout_marginTop="8dp"
+      android:text="说明:昵称只作为用户在App上面购买商品后用于评论,查看等显示，不作为收件人使用。"
+      />
+</LinearLayout>

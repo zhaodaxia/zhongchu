@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:paddingBottom="5dp"
+    >
+    
+    <RelativeLayout 
+        android:id="@+id/rlIv"
+        android:layout_width="161dp"
+        android:layout_height="112dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        >
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:background="@drawable/gv_main"
+            />
+        
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/tvName"
+        style="@style/tv_14_black_color"
+        android:text="澳洲进口牛肉"
+        android:layout_below="@id/rlIv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        />
+   <TextView 
+        android:id="@+id/tv_collectdes"
+        style="@style/tv_12_gray_color"
+        android:text="月销量：1500kg"
+        android:layout_below="@id/tvName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        />
+    <RelativeLayout 
+        android:layout_width="92dp"
+        android:layout_height="23dp"
+         android:layout_below="@id/tv_collectdes"
+         android:layout_marginTop="5dp"
+        >
+        <ImageView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_price"
+            />
+        <TextView 
+            style="@style/tv_14_orange_color"
+            android:text="2.8元"
+            android:id="@+id/tv_collectprice"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView 
+            style="@style/tv_12_gray_color"
+            android:text="/斤"
+            android:layout_toRightOf="@+id/tv_collectprice"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    
+    <ImageView 
+        android:layout_width="32dp"
+        android:layout_height="23dp"
+        android:background="@drawable/add"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_collectdes"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        />
+</RelativeLayout>

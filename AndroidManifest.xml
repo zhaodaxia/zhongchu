@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cai.vegetables"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name="com.cai.vegetables.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.cai.vegetables.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:icon="@drawable/logo"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 主页面 -->
+        <activity
+            android:name="com.cai.vegetables.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <!-- 登陆页面 -->
+        <activity
+            android:name="com.cai.vegetables.activity.user.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 注册页面 -->
+        <activity
+            android:name="com.cai.vegetables.activity.user.RegisterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 忘记密码页面 -->
+        <activity
+            android:name="com.cai.vegetables.activity.user.FindPwdActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 扫描 -->
+        <activity
+            android:name="com.cai.vegetables.utils.scan.CaptureActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 找同类 -->
+        <activity
+            android:name="com.cai.vegetables.activity.shop.SimilarActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 编辑购物车 -->
+        <activity
+            android:name="com.cai.vegetables.activity.shop.EditShopActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 确认订单 -->
+        <activity
+            android:name="com.cai.vegetables.activity.shop.SureOrderActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 选择地址 -->
+        <activity
+            android:name="com.cai.vegetables.activity.shop.SelectAddressActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 新增地址 -->
+        <activity
+            android:name="com.cai.vegetables.activity.shop.AddAdressActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 订单支付 -->
+        <activity
+            android:name="com.cai.vegetables.activity.shop.OrderPayActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 订单支付成功 -->
+        <activity
+            android:name="com.cai.vegetables.activity.shop.PaySucessActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 运费说明 -->
+        <activity
+            android:name="com.cai.vegetables.activity.shop.ShippingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 完善订单信息界面 -->
+        <activity
+            android:name="com.cai.vegetables.activity.light.OrderInfoAct"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 历史司机界面 -->
+        <activity
+            android:name="com.cai.vegetables.activity.light.MyCarerAct"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 给司机留言界面 -->
+        <activity
+            android:name="com.cai.vegetables.activity.light.SendMsgAct"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 等候时间计费界面 -->
+        <activity
+            android:name="com.cai.vegetables.activity.light.WaitPriceAct"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 选择常用路线界面 -->
+        <activity
+            android:name="com.cai.vegetables.activity.light.SelectMyRoateAct"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 添加常用路线界面 -->
+        <activity
+            android:name="com.cai.vegetables.activity.light.AddRoateAct"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 选择收货和发货地址界面 -->
+        <activity
+            android:name="com.cai.vegetables.activity.light.SelectAdressAct"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 选择城市界面 -->
+        <activity
+            android:name="com.cai.vegetables.activity.light.SelectConutryAct"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 选择收货和发货人界面 -->
+        <activity
+            android:name="com.cai.vegetables.activity.light.SelectLinkManAct"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 派单界面 -->
+        <activity
+            android:name="com.cai.vegetables.activity.light.PdAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人资料 -->
+        <activity
+            android:name="com.cai.vegetables.activity.myself.MyDataActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 裁剪图片 -->
+        <activity
+            android:name="com.cai.vegetables.view.crop.ClipActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 申请加盟 -->
+        <activity
+            android:name="com.cai.vegetables.activity.myself.JoinActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 邀请朋友 -->
+        <activity
+            android:name="com.cai.vegetables.activity.myself.ShareFriendActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 修改昵称 -->
+        <activity
+            android:name="com.cai.vegetables.activity.myself.EditNameActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 申请成为企业采购员 -->
+        <activity
+            android:name="com.cai.vegetables.activity.myself.CompanyAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 申请成为商户 -->
+        <activity
+            android:name="com.cai.vegetables.activity.myself.ShangHuAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 服务中心 -->
+        <activity
+            android:name="com.cai.vegetables.activity.service.ServiceAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 常见问题 -->
+        <activity
+            android:name="com.cai.vegetables.activity.service.ProblemAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 常见问题解决方案 -->
+        <activity
+            android:name="com.cai.vegetables.activity.service.ProblemDetailAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 退货细则 -->
+        <activity
+            android:name="com.cai.vegetables.activity.service.GoodsBackAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 反馈投诉 -->
+        <activity
+            android:name="com.cai.vegetables.activity.service.FeedBackAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 关于我们 -->
+        <activity
+            android:name="com.cai.vegetables.activity.service.AboutUsAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 联系客服 -->
+        <activity
+            android:name="com.cai.vegetables.activity.service.LinkServiceAct"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 社区菜场 -->
+        <activity
+            android:name="com.cai.vegetables.activity.community.CommunityActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 社区菜场详情 -->
+        <activity
+            android:name="com.cai.vegetables.activity.community.CommDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 社区菜场介绍 -->
+        <activity
+            android:name="com.cai.vegetables.activity.community.CommIntroActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 写点评 -->
+        <activity
+            android:name="com.cai.vegetables.activity.community.ReviewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 开始购物 -->
+        <activity
+            android:name="com.cai.vegetables.activity.community.StartShopActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 搜索 -->
+        <activity
+            android:name="com.cai.vegetables.activity.home.SearchActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 照片展示 -->
+        <activity
+            android:name="com.cai.vegetables.activity.photo.ImagePagerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 照片展示 带删除 -->
+        <activity
+            android:name="com.cai.vegetables.activity.photo.ImageBrowserActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 选择照片 -->
+        <activity
+            android:name="com.cai.vegetables.activity.photo.PicSelectActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 商品详情 -->
+        <activity
+            android:name="com.cai.vegetables.activity.market.GoodsDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 商品列表 -->
+        <activity
+            android:name="com.cai.vegetables.activity.market.GoodsItemActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 选择分类 -->
+        <activity
+            android:name="com.cai.vegetables.activity.myself.ProductClassActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 我的账户 -->
+        <activity
+            android:name="com.cai.vegetables.activity.myself.IntegralActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 企业采购 -->
+        <activity
+            android:name="com.cai.vegetables.activity.home.ProcurementActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 优惠活动 -->
+        <activity
+            android:name="com.cai.vegetables.activity.home.PreferentialActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 城市切换 -->
+        <activity
+            android:name="com.cai.vegetables.activity.home.CityActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 申请成为快递员 -->
+        <activity
+            android:name="com.cai.vegetables.activity.myself.CourierAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 申请失败 -->
+        <activity
+            android:name="com.cai.vegetables.activity.myself.FailedAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 众筹 -->
+        <activity
+            android:name="com.cai.vegetables.activity.raise.RaiseActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 众筹详情 -->
+        <activity
+            android:name="com.cai.vegetables.activity.raise.RaiseDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 我的帐户 -->
+        <activity
+            android:name="com.cai.vegetables.activity.myself.MyAccountAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 如何使用积分 -->
+        <activity
+            android:name="com.cai.vegetables.activity.myself.HowToUseAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 我的代金券 -->
+        <activity
+            android:name="com.cai.vegetables.activity.myself.MyDjqAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 众厨菜谱 -->
+        <activity
+            android:name="com.cai.vegetables.activity.cookbook.CookBookAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+         <!-- 菜谱确认订单 -->
+        <activity
+            android:name="com.cai.vegetables.activity.cookbook.FoodOrderActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+         <!-- 众厨菜谱详情 -->
+        <activity
+            android:name="com.cai.vegetables.activity.cookbook.CookBookDetailAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+          <!-- 评论列表-->
+        <activity
+            android:name="com.cai.vegetables.activity.cookbook.CommentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+          <!-- 评论分-->
+        <activity
+            android:name="com.cai.vegetables.activity.cookbook.CommActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        
+          <!-- 购买主要食材-->
+        <activity
+            android:name="com.cai.vegetables.activity.cookbook.BuyFoodActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+          <!-- 购买调味料-->
+        <activity
+            android:name="com.cai.vegetables.activity.cookbook.BuySeasoningActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 发布菜谱第一步 -->
+        <activity
+            android:name="com.cai.vegetables.activity.cookbook.ReleaseFirAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 发布菜谱第二步 -->
+        <activity
+            android:name="com.cai.vegetables.activity.cookbook.ReleaseSecAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 发布菜谱第三步 -->
+        <activity
+            android:name="com.cai.vegetables.activity.cookbook.ReleaseThrAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 发布菜谱第四步 -->
+        <activity
+            android:name="com.cai.vegetables.activity.cookbook.ReleaseFourAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 发布菜谱第五步 -->
+        <activity
+            android:name="com.cai.vegetables.activity.cookbook.ReleaseFiveAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 发布菜谱第五步详情 -->
+        <activity
+            android:name="com.cai.vegetables.activity.cookbook.RelFiveDetailAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 发布菜谱第六步 -->
+        <activity
+            android:name="com.cai.vegetables.activity.cookbook.ReleaseSixAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 发布菜谱 -->
+        <activity
+            android:name="com.cai.vegetables.activity.cookbook.PublishAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 选择食材 -->
+        <activity
+            android:name="com.cai.vegetables.activity.cookbook.ChooseFoodAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 选择用具 -->
+        <activity
+            android:name="com.cai.vegetables.activity.cookbook.ChooseWorkAct"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 我的消息 -->
+        <activity
+            android:name="com.cai.vegetables.activity.myself.Message_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 消息详情 -->
+        <activity
+            android:name="com.cai.vegetables.activity.myself.MessageDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 我的订单 -->
+        <activity
+            android:name="com.cai.vegetables.activity.myself.MyOrderActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 同城货的订单详情 -->
+        <activity
+            android:name="com.cai.vegetables.activity.myself.SameCityDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 我的-收获地址 -->
+         <activity android:name="com.cai.vegetables.activity.myself.AdressManagerActivity"
+             android:screenOrientation="portrait"> 
+        </activity>
+        <!-- 我的订单-订单评价 -->
+         <activity android:name="com.cai.vegetables.activity.myself.OrderComment"
+             android:screenOrientation="portrait"> 
+        </activity>
+        <!-- 我的订单-订单详情 -->
+         <activity android:name="com.cai.vegetables.activity.myself.OrderDetailActivity"
+             android:screenOrientation="portrait"> 
+        </activity>   
+        <!-- 我的-我的收藏 -->
+         <activity android:name="com.cai.vegetables.activity.myself.CollectActivity"
+             android:screenOrientation="portrait"> 
+        </activity>      
+        <!-- 我的账户-积分兑换详情 -->
+         <activity android:name="com.cai.vegetables.activity.myself.ExchangeAct"
+             android:screenOrientation="portrait"> 
+        </activity>      
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="75192ea44da9f10f07ab13afeffd45ea" />
+    </application>
+
+</manifest>

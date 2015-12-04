@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:minHeight="100dp"
+    >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        <CheckBox 
+            android:id="@+id/cbShop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:layout_centerVertical="true"
+            />
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/cbShop"
+            android:layout_marginLeft="10dp"
+            >
+            <ImageView 
+                android:id="@+id/iv"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:background="@drawable/main_vp"
+                />
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                >
+                <TextView style="@style/tv_14_black_color"
+                    android:text="纯正山东金针菇"
+                    />
+                
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                     android:layout_marginTop="5dp"
+                    >
+                <TextView style="@style/tv_14_black_color"
+                    android:text="单价："
+                   
+                    />
+                <TextView style="@style/tv_14_black_color"
+                    android:text="2.88"
+                    android:textColor="#e89951"
+                    />
+                <TextView style="@style/tv_14_black_color"
+                    android:text="元／斤"
+                    />
+                </LinearLayout>
+                <TextView style="@style/tv_14_black_color"
+                    android:text="购买数量：5斤"
+                    android:layout_marginTop="5dp"
+                    />
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+       <TextView 
+           android:id="@+id/tvSimilar"
+           android:layout_width="70dp"
+           android:layout_height="31dp"
+           android:background="@drawable/similar"
+           android:gravity="center"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentBottom="true"
+           android:layout_marginBottom="20dp"
+           android:text="找同类"
+           android:textSize="16sp"
+           android:textColor="#66ac2f"
+           android:visibility="gone"
+           />
+        
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#e7e7e7"
+        />
+</LinearLayout>

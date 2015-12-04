@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/bg_color">
+    
+    <include layout="@layout/title_act_layout"/>
+    
+	
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:padding="10dp"
+	    android:background="#ffffff"
+	    >
+        <ImageView 
+            android:id="@+id/iv"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:background="@drawable/gv_main"
+            />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv"
+            android:gravity="center_vertical"
+            >
+            <TextView 
+                style="@style/tv_14_black_color"
+                android:id="@+id/tv_ordername"
+                android:text="菜名：鱼香肉丝"
+                />
+            <TextView 
+				style="@style/tv_12_gray_color"
+				android:text="发布人：撒发掘"
+				android:layout_marginTop="8dp"
+                />
+            <TextView 
+                style="@style/tv_12_gray_color"
+                android:id="@+id/tv_ordercount"
+                android:text="食材：傻噶，塞弗"
+                android:layout_marginTop="5dp"
+                />
+             <TextView 
+                style="@style/tv_12_gray_color"
+                android:text="上传时间：2013-01-03"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+        
+           <RelativeLayout
+            android:layout_width="55dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shop_star" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:text="5.0"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+        
+        <ImageView style="@style/arrow_right"
+            android:layout_alignParentRight="true"/>
+    
+	  </RelativeLayout>
+	<View 
+	    style="@style/divild"
+	    />
+	
+	
+	<LinearLayout 
+		style="@style/ll_padding10_item"
+		android:layout_marginTop="5dp"
+		android:gravity="center_vertical"
+	    >
+	    <TextView 
+	        style="@style/tv_14_black_color"
+	        android:text="给菜谱评分"
+	        />
+	   	<View 
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="0dp"
+	        />
+	   	<RatingBar 
+	   	    style="@style/myratingbar"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="1.0"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+	   	    />	    
+	</LinearLayout>
+	
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        >
+        <ImageView 
+            android:id="@+id/ivPhoto"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/pl_11"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            />
+        <EditText 
+            android:id="@+id/et_ordercomment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_above="@id/ivPhoto"
+            android:hint="请写下对菜谱的感受"
+            android:gravity="top"
+            android:textColorHint="#333333"
+            android:textSize="12sp"
+            android:layout_marginBottom="5dp"
+            />
+        
+    </RelativeLayout>
+    
+  	<com.leaf.library.widget.MyGridView
+            android:id="@+id/gvph_ordercomment"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:columnWidth="70dp"
+            android:gravity="center"
+            android:horizontalSpacing="2.5dp"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="2.5dp" >
+       </com.leaf.library.widget.MyGridView>
+       
+  	<View 
+  	    android:layout_weight="1"
+  	    android:layout_width="0dp"
+  	    android:layout_height="0dp"
+  	    />
+  	
+  	  <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        >
+        <TextView 
+            android:id="@+id/tvSucess"
+            android:layout_width="93dp"
+            android:layout_height="32dp"
+            android:background="@drawable/pl_14"
+            android:text="发表评论"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_centerInParent="true"/>
+        
+    </RelativeLayout>
+</LinearLayout>

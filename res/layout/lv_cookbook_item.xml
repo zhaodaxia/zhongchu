@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/main_vp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/tv_14_black_color"
+                android:text="菜名：尖椒豆腐干" />
+
+            <TextView
+                style="@style/tv_12_black_color"
+                android:layout_marginTop="10dp"
+                android:text="发布人：脑次的小雀" />
+
+            <TextView
+                style="@style/tv_12_black_color"
+                android:layout_marginTop="5dp"
+                android:text="食材：干豆腐、尖椒、胡萝卜" />
+        </LinearLayout>
+
+        <ImageView
+            style="@style/arrow_right"
+            android:layout_alignParentRight="true" />
+
+        <RelativeLayout
+            android:layout_width="55dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shop_star" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:text="5.0"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        style="@style/tv_12_black_color"
+        android:layout_marginLeft="70dp"
+        android:text="上传时间：2015－12-09 03:20:21" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#ffffff" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#e7e7e7" />
+
+</LinearLayout>

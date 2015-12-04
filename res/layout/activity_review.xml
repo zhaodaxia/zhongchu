@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/linear_style"
+    >
+    <include layout="@layout/title_act_layout"/>
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        >
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+  
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        <TextView style="@style/tv_14_black_color"
+            android:layout_centerVertical="true"
+            android:text="环境评分"/>
+        
+         <RatingBar 
+                style="@style/myratingbar"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="1.0"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        <TextView style="@style/tv_14_black_color"
+            android:layout_centerVertical="true"
+            android:text="卫生评分"/>
+        
+          <RatingBar 
+                style="@style/myratingbar"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="1.0"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        <TextView style="@style/tv_14_black_color"
+            android:layout_centerVertical="true"
+            android:text="服务评分"/>
+        
+          <RatingBar 
+                style="@style/myratingbar"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="1.0"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        >
+        <ImageView 
+            android:id="@+id/ivPhoto"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/pl_11"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            />
+        <EditText 
+            android:id="@+id/etRevier"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_above="@id/ivPhoto"
+            android:hint="请写下对该商铺的感受吧！"
+            android:gravity="top"
+            android:textColorHint="#333333"
+            android:textSize="14sp"
+            android:layout_marginBottom="5dp"
+            />
+        
+    </RelativeLayout>
+    
+    <com.leaf.library.widget.MyGridView
+            android:id="@+id/gvPhoto"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:columnWidth="70dp"
+            android:gravity="center"
+            android:horizontalSpacing="2.5dp"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="2.5dp" >
+        </com.leaf.library.widget.MyGridView>
+    </LinearLayout>
+      </ScrollView>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        >
+        <TextView 
+            android:id="@+id/tvSucess"
+            android:layout_width="93dp"
+            android:layout_height="32dp"
+            android:background="@drawable/pl_14"
+            android:text="发表点评"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_centerInParent="true"/>
+        
+    </RelativeLayout>
+</LinearLayout>

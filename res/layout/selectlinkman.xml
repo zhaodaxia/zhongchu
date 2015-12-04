@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/linear_style" >
+
+    <include layout="@layout/title_act_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true" >
+
+            <TextView
+                android:id="@+id/slectlinkman_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/tx_03"
+                android:drawablePadding="5dp"
+                android:hint="发货人姓名"
+                android:textColor="@color/tv_purple"
+                android:textColorHint="@color/tv_purple" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/slectlinkman_rl"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@drawable/txl" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/slectlinkman_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/tx_07"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:hint="手机号"
+            android:textColor="@color/tv_purple"
+            android:textColorHint="@color/tv_purple" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/slectlinkman_tv"
+        style="@style/tv_14_gray_color"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="历史发货人" />
+
+    <ListView
+        android:id="@+id/selectlinkman_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:divider="@null"
+        android:scrollbars="@null" >
+    </ListView>
+
+</LinearLayout>

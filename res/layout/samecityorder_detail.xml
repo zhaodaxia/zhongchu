@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    
+	<include layout="@layout/title_act_layout"/>
+	<ScrollView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:scrollbars="none"
+	    >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/bg_color"
+    >
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/white"
+	    android:padding="10dp"
+	    >
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/check_duihao"
+	        android:layout_centerVertical="true"
+	        android:id="@+id/iv_righticon"
+	        />
+	    <TextView 
+	        style="@style/tv_14_black_color"
+	        android:text="已完成"
+	        android:layout_toRightOf="@+id/iv_righticon"
+	         android:layout_centerVertical="true"
+	        />
+
+
+	        <TextView 
+	            style="@style/tv_12_gray_color"
+	            android:text="里程：10.6公里"
+	            android:layout_alignParentRight="true"
+	            android:id="@+id/tv_top"
+	            />
+	         <TextView 
+	            style="@style/tv_12_gray_color"
+	            android:text="时长：15分钟"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/tv_top"
+	            />
+	  
+	</RelativeLayout>
+	
+	
+	<LinearLayout 
+	    style="@style/ll_item"
+	    android:layout_marginTop="10dp"
+	    >
+	    <ImageView
+          style="@style/dong_iv_style"
+          android:src="@drawable/wsxx_08" />
+		<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    >
+	    <TextView 
+	        style="@style/tv_12_gray_color"
+	        android:text="中国·梦古-上海西虹桥创意产业园"
+	        />
+	   	<TextView 
+	        style="@style/tv_12_gray_color"
+	        android:text="发货人：李晓明    133333333"
+	        />
+		</LinearLayout>
+
+	</LinearLayout>
+	
+		<LinearLayout 
+	    style="@style/ll_item"
+	    >
+	    <ImageView
+          style="@style/dong_iv_style"
+          android:src="@drawable/lx_10" />
+		<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    >
+	    <TextView 
+	        style="@style/tv_12_gray_color"
+	        android:text="松江区沪松公路1177号佳预信息科技大厦D座7楼"
+	        />
+	   	<TextView 
+	        style="@style/tv_12_gray_color"
+	        android:text="收货人：张志远    133333333"
+	        />
+		</LinearLayout>
+
+	</LinearLayout>
+	
+	<LinearLayout 
+	    style="@style/ll_item"
+	    >
+	    <ImageView
+          style="@style/dong_iv_style"
+          android:src="@drawable/hd_07" />
+
+	   	<TextView 
+	        style="@style/tv_12_gray_color"
+	        android:text="小型面包车"
+	        />
+
+	</LinearLayout>
+	
+		<LinearLayout 
+	    style="@style/ll_item"
+	    android:paddingBottom="10dp"
+	    >
+	    <ImageView
+          style="@style/dong_iv_style"
+          android:src="@drawable/hd_10" />
+
+	    <TextView 
+	        style="@style/tv_12_gray_color"
+	        android:text="2015-10-30 18:01"
+	        />
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:background="@color/white"
+	    android:layout_marginTop="10dp"
+	    >
+	    <RelativeLayout 
+	        style="@style/rl_item"
+	        >
+	        <TextView 
+	            style="@style/rl_lefttv"
+	            android:text="起租价"
+	            />
+	        <TextView 
+	            style="@style/rl_righttv"
+	             android:text="33元"
+	            />
+	    </RelativeLayout>
+	    <RelativeLayout 
+	        style="@style/rl_item"
+	        >
+	        <TextView 
+	            style="@style/rl_lefttv"
+	            android:text="里程费(10.6公里)"
+	            />
+	        <TextView 
+	            style="@style/rl_righttv"
+	             android:text="16.8元"
+	            />
+	    </RelativeLayout>
+	    <RelativeLayout 
+	        style="@style/rl_item"
+	        >
+	        <TextView 
+	            style="@style/rl_lefttv"
+	            android:text="时长费(15分钟)"
+	            />
+	        <TextView 
+	            style="@style/rl_righttv"
+	             android:text="7.5元"
+	            />
+	    </RelativeLayout>
+	    	    <RelativeLayout 
+	        style="@style/rl_item"
+	        >
+	        <TextView 
+	            style="@style/rl_lefttv"
+	            android:text="实付款"
+	            />
+	        <TextView 
+	           style="@style/tv_14_black_color"
+	           android:layout_centerVertical="true"
+	           android:layout_alignParentRight="true"
+	           android:id="@+id/sc_righttv"
+	           android:text="57元"
+	            />
+	        <TextView 
+				style="@style/tv_12_gray_color"
+				android:layout_toLeftOf="@+id/sc_righttv"
+				android:layout_centerVertical="true"
+				android:text="57.3元(抹零0.3元)="
+	            />
+	    </RelativeLayout>
+	</LinearLayout>
+	
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:background="@color/white"
+        >
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pdcg_03"
+            />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView 
+                style="@style/tv_14_black_color"
+                android:text="王师傅-小型面包车"
+                />
+            <TextView 
+               style="@style/tv_12_gray_color"
+               android:text="沪**8573 五菱荣光"
+                />
+            <TextView 
+                android:layout_width="62dp"
+                android:layout_height="20dp"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:background="@drawable/yhpl_33"
+                android:text="5.0"
+                android:gravity="center"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:padding="10dp"
+            >
+            <TextView 
+                style="@style/tv_14_black_color"
+                android:text="给司机评分"
+                />
+            <View 
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                />
+            <RatingBar 
+                style="@style/myratingbar"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="1.0"
+                android:id="@+id/driver_rating"
+                />
+        </LinearLayout>
+        
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:id="@+id/disvisvible_bottom"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hd_03"
+            android:text="确认评价"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:id="@+id/bt_common"
+            />
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

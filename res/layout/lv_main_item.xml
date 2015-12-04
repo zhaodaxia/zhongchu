@@ -1,0 +1,197 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dip" >
+
+        <com.cai.vegetables.view.LoopViewPager
+            android:id="@+id/vpMain"
+            android:layout_width="match_parent"
+            android:layout_height="170dp" >
+        </com.cai.vegetables.view.LoopViewPager>
+
+        <LinearLayout
+            android:id="@+id/ll_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.leaf.library.widget.MyGridView
+        android:id="@+id/gvMainM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:cacheColorHint="#00000000"
+        android:numColumns="4"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:verticalSpacing="5dp" >
+    </com.leaf.library.widget.MyGridView>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#ffffff"
+        >
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+            <ImageView android:layout_width="53dp"
+                android:layout_height="50dp"
+                android:src="@drawable/main_vp"
+                />
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#ce21c8"
+                    android:text="首单优惠"
+                    />
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="#919191"
+                    android:text="满100减5元起"
+                    android:layout_marginTop="3dp"
+                    android:singleLine="true"
+                    />
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        <View 
+            android:layout_width="1px"
+            android:layout_height="60dp"
+            android:background="#e7e7e7"
+            android:layout_gravity="center_vertical"
+            />
+        
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+            <ImageView android:layout_width="53dp"
+                android:layout_height="50dp"
+                android:src="@drawable/main_vp"
+                />
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#f57126"
+                    android:text="大额满减"
+                    />
+                
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="#919191"
+                    android:text="满500元运费减半"
+                    android:singleLine="true"
+                    android:layout_marginTop="3dp"
+                    />
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp" 
+        android:orientation="horizontal"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" 
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sale_main" />
+
+            <TextView
+                style="@style/tv_14_main_color"
+                android:text="精选市场" 
+                android:layout_marginLeft="5dp"
+                />
+        </LinearLayout>
+        
+        <View 
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_gravity="center_vertical"
+            android:background="#919191"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            />
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_point"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            />
+    </LinearLayout>
+
+    <com.leaf.library.widget.MyGridView
+        android:id="@+id/gvMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#e7e7e7"
+        android:cacheColorHint="#00000000"
+        android:numColumns="2"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        >
+    </com.leaf.library.widget.MyGridView>
+
+</LinearLayout>

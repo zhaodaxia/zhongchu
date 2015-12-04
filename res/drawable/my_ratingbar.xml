@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+android:id/background"
+        android:drawable="@drawable/pl_07"/>//正常情况下样式
+    <item
+        android:id="@+android:id/secondaryProgress"
+        android:drawable="@drawable/pl_07"/>
+    <item
+        android:id="@+android:id/progress"
+        android:drawable="@drawable/xx_03"/>//这就是我们选中的样式
+
+</layer-list>

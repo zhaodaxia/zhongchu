@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/linear_style">
+    <include layout="@layout/title_act_layout"/>
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        
+        <com.cai.vegetables.view.pulltorefresh.PullToRefreshListView
+            android:id="@+id/plv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+     ></com.cai.vegetables.view.pulltorefresh.PullToRefreshListView>
+        
+        
+        <com.cai.vegetables.view.LoadingView
+            android:id="@+id/loadView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></com.cai.vegetables.view.LoadingView>
+        
+    </FrameLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        >
+        <TextView 
+            android:id="@+id/tvAddress"
+            android:layout_width="145dp"
+            android:layout_height="33dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"
+            android:background="@drawable/add_address"
+            android:text="新增收获地址"
+            android:textSize="16sp"
+            />
+    </RelativeLayout>
+</LinearLayout>

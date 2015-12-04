@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/linear_style" >
+
+    <include layout="@layout/title_act_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/releasesix_iv"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/releasesix_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableBottom="@drawable/pl_11"
+            android:drawablePadding="5dp"
+            android:text="暂未上传封面" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/rl_item"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp" 
+        android:id="@+id/rl_cook1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_cook1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/tv_14_black_color"
+                android:text="菜谱基本信息"
+                android:textColor="@color/tv_purple" />
+
+            <TextView
+                style="@style/tv_12_gray_color"
+                android:layout_marginTop="5dp"
+                android:text="未填写"
+                android:id="@+id/tv_cook1" 
+                android:singleLine="true"/>
+        </LinearLayout>
+
+        <ImageView
+            style="@style/arrow_right"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/rl_item"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/rl_cook2" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_cook2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/tv_14_black_color"
+                android:text="封面图"
+                android:textColor="@color/tv_purple" />
+
+            <TextView
+                style="@style/tv_12_gray_color"
+                android:layout_marginTop="5dp"
+                android:text="未上传" 
+                android:id="@+id/tv_cook2"
+                />
+        </LinearLayout>
+
+        <ImageView
+            style="@style/arrow_right"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/rl_item"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/rl_cook3" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_cook3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/tv_14_black_color"
+                android:text="所需食材"
+                android:textColor="@color/tv_purple" />
+
+            <TextView
+                style="@style/tv_12_gray_color"
+                android:layout_marginTop="5dp"
+                android:text="未添加所需食材"
+                android:id="@+id/tv_cook3" 
+                android:singleLine="true"/>
+        </LinearLayout>
+
+        <ImageView
+            style="@style/arrow_right"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/rl_item"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/rl_cook4" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_cook4"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/tv_14_black_color"
+                android:text="所需用具"
+                android:textColor="@color/tv_purple" />
+
+            <TextView
+                style="@style/tv_12_gray_color"
+                android:layout_marginTop="5dp"
+                android:text="未添加所需用具" 
+                android:id="@+id/tv_cook4"
+                android:singleLine="true"/>
+        </LinearLayout>
+
+        <ImageView
+            style="@style/arrow_right"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/rl_item"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/rl_cook5" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_cook5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/tv_14_black_color"
+                android:text="制作步骤"
+                android:textColor="@color/tv_purple" />
+
+            <TextView
+                style="@style/tv_12_gray_color"
+                android:layout_marginTop="5dp"
+                android:text="未添加" 
+                android:id="@+id/tv_cook5"
+                android:singleLine="true"/>
+        </LinearLayout>
+
+        <ImageView
+            style="@style/arrow_right"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <Button
+            android:id="@+id/releasesix_btn"
+            style="@style/green_btn"
+            android:text="发布菜谱" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/linear_style"
+    >
+    
+    <include layout="@layout/title_act_layout"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        
+        <TextView 
+            style="@style/tv_14_gray_color"
+            android:drawableLeft="@drawable/location_s"
+            android:layout_centerVertical="true"
+            android:text="上海市青浦区徐泾镇"
+            android:drawablePadding="5dp"
+            />
+        
+        <ImageView 
+            android:layout_width="13dp"
+            android:layout_height="12dp"
+            android:background="@drawable/refresh"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    
+     <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        >
+        
+        <com.cai.vegetables.view.pulltorefresh.PullToRefreshListView
+            android:id="@+id/plv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+     ></com.cai.vegetables.view.pulltorefresh.PullToRefreshListView>
+        
+        
+        <com.cai.vegetables.view.LoadingView
+            android:id="@+id/loadView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></com.cai.vegetables.view.LoadingView>
+        
+    </FrameLayout>
+</LinearLayout>

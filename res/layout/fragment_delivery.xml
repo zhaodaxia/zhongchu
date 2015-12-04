@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/linear_style"
+    android:background="#ffffff"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+    
+    <TextView style="@style/tv_14_black_color"
+        android:text="服务承诺"
+        />
+    
+    <View style="@style/view_line"
+        android:layout_marginTop="10dp"/>
+    
+    <TextView style="@style/tv_12_gray_color"
+        android:text="但是咖啡就开始感觉三跪九叩时间赶快睡觉,撒旦发射的立法局拉萨的撒旦浪费萨里国家开始阿三发生大撒旦立法局喀什阿三风景"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

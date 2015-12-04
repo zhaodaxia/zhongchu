@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hsv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_back"
+    android:gravity="center_vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="130dp" >
+
+            <CheckBox
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:button="@drawable/roate_cb" />
+
+            <LinearLayout
+                android:paddingLeft="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/tv_16_black_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       android:drawableLeft="@drawable/wsxx_08"
+                        android:drawablePadding="5dp"
+                        android:text="中国梦谷"  />
+
+                    <TextView
+                        style="@style/tv_12_gray_color"
+                        android:layout_marginLeft="20dp"
+                        android:text="上海青浦区" />
+                </LinearLayout>
+
+                <View style="@style/view_line" 
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/tv_16_black_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/lx_10"
+                        android:drawablePadding="5dp"
+                        android:text="徐泾镇" 
+                       />
+
+                    <TextView
+                        style="@style/tv_12_gray_color"
+                        android:layout_marginLeft="20dp"
+                        android:text="上海青浦区" />
+                </LinearLayout>
+                
+            </LinearLayout>
+            
+            <View android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_alignParentBottom="true"
+                android:background="#f4f4f4"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/action"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="#fe5958"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="删除"
+            android:textColor="@color/white" />
+
+        <View
+            style="@style/view_line"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+</HorizontalScrollView>

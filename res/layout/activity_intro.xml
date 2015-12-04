@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/linear_style"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/main_color" >
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="goback"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/top_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="菜场介绍"
+            android:textColor="@color/main_text_color"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/one_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/zccp_03" />
+    </RelativeLayout>
+    
+    <TextView 
+       style="@style/tv_14_gray_color"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="的见风使舵结果克里斯蒂家公司的结果是开工建设的客观接收可见光时间的恐惧感 "
+        android:background="#ffffff"
+        />
+</LinearLayout>

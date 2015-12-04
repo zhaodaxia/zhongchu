@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/linear_style"
+    >
+    <include layout="@layout/title_act_layout"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/paay_sucess"
+			/>
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        >
+        
+        <TextView style="@style/tv_14_black_color"
+            android:text="订单编号：SH2015090277877"
+            android:layout_marginTop="10dp"/>
+        
+        <TextView style="@style/tv_14_gray_color"
+            android:text="预计送达时间：2015-09-15 12点前送到（特殊情况除外）"
+            android:layout_marginTop="5dp"/>
+         <TextView style="@style/tv_14_gray_color"
+            android:text="下单时间：2015-09-15 12:00:00"
+            android:layout_marginTop="5dp"/>
+         
+         <View style="@style/view_line"
+             android:layout_marginTop="20dp"/>
+        
+         <TextView style="@style/tv_14_black_color"
+             android:text="商品单价：58.00元／斤"
+             android:layout_marginTop="20dp"/>
+         <TextView style="@style/tv_14_black_color"
+             android:text="购买数量：2斤"
+             android:layout_marginTop="3dp"/>
+         <TextView style="@style/tv_14_black_color"
+             android:text="优惠：50元（使用50元代金券）"
+             android:layout_marginTop="3dp"/>
+         <TextView style="@style/tv_14_black_color"
+             android:text="运费：5元"
+             android:layout_marginTop="3dp"/>
+         
+         <View style="@style/view_line"
+             android:layout_marginTop="20dp"/>
+         
+         <TextView style="@style/tv_12_gray_color"
+             android:text="共计2件商品   合计：116.00元    运费：5.00元"
+             android:layout_marginTop="20dp"/>
+         
+         <View style="@style/view_line"
+             android:layout_marginTop="20dp"/>
+         
+         <LinearLayout 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginTop="20dp"
+             android:layout_marginBottom="10dp"
+             >
+             <TextView style="@style/tv_14_black_color"
+                 android:text="总金额："/>
+             <TextView android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="18sp"
+                 android:text="368元"
+                 android:textColor="#e89951"/>
+         </LinearLayout>
+         
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        <TextView style="@style/tv_14_main_color"
+            android:text="配送司机"
+            android:layout_centerVertical="true"/>
+        
+        <ImageView 
+            android:id="@+id/ivArrow"
+            style="@style/arrow_right"
+            android:layout_alignParentRight="true"/>
+        
+        <TextView 
+            android:id="@+id/tvPhone"
+            style="@style/tv_12_gray_color"
+            android:text="13877777777"
+            android:layout_toLeftOf="@id/ivArrow"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            />
+        
+        <TextView 
+            android:id="@+id/tvName"
+            style="@style/tv_12_gray_color"
+            android:text="张明"
+            android:layout_toLeftOf="@id/tvPhone"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+</LinearLayout>

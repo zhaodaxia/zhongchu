@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding="10dp"
+    android:background="@drawable/bg_round">
+    
+	<TextView 
+		style="@style/tv_14_black_color"
+	    android:singleLine="true"
+	    android:id="@+id/tv_message_title"
+	    />
+
+	<TextView 
+	    style="@style/tv_12_gray_color"
+	    android:id="@+id/tv_message_content"
+	    />
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="@color/bg_color"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+	    />
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    >
+	    <TextView 
+	        style="@style/tv_14_main_color"
+	        android:text="查看详情" 
+	        android:layout_centerVertical="true"
+	        />
+	    <TextView 
+	        style="@style/tv_12_gray_color"
+	        android:id="@+id/tv_message_time"
+	        android:layout_toLeftOf="@+id/messageitem_arrow"
+	        android:layout_centerVertical="true"
+	        />
+	    <ImageView 
+	        style="@style/yang_arrow_right"
+	        android:id="@+id/messageitem_arrow"
+	        />
+	</RelativeLayout>
+</LinearLayout>

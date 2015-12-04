@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/linear_style" >
+
+    <include layout="@layout/title_act_layout" />
+
+    <TextView
+        android:id="@+id/selectroate1"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/wsxx_08"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/arrow_down"
+        android:gravity="center_vertical"
+        android:hint="请选择始发地省、市、区"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColorHint="#1b4157" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:gravity="top|left"
+        android:hint="详细街道地址"
+        android:inputType="text"
+        android:maxLength="100"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textColorHint="#1b4157" />
+
+    <TextView
+          android:id="@+id/selectroate2"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/lx_10"
+        android:drawablePadding="5dp"
+        android:drawableRight="@drawable/arrow_down"
+        android:gravity="center_vertical"
+        android:hint="请选择目的地省、市、区"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColorHint="#1b4157" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:gravity="top|left"
+        android:hint="详细街道地址"
+        android:inputType="text"
+        android:maxLength="100"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textColorHint="#1b4157" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white" >
+
+            <Button
+                android:id="@+id/addroate_btn"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/pj_05"
+                android:text="保存线路"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

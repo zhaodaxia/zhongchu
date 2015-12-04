@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/linear_style"
+    >
+    <include layout="@layout/title_act_layout"/>
+    <include layout="@layout/search_midle_edit"
+       />
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#ffffff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            >
+            <ImageView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dz_03"/>
+            
+            <TextView style="@style/tv_14_black_color"
+                android:text="当前城市"
+                android:layout_marginLeft="10dp"/>
+            
+        </LinearLayout>
+        
+        <TextView style="@style/tv_14_black_color"
+            android:text="上海"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+        
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.cai.vegetables.view.PinnedHeaderListView
+            android:id="@+id/plv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:scrollbars="none" 
+            />
+
+        <com.cai.vegetables.view.BladeView
+            android:id="@+id/mLetterListView"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#00000000" >
+        </com.cai.vegetables.view.BladeView>
+    </RelativeLayout>
+    
+</LinearLayout>

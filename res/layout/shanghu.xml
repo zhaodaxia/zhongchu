@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/linear_style" >
+
+    <include layout="@layout/title_act_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="@null" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                style="@style/rl_item"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    style="@style/tv_14_gray_color"
+                    android:layout_centerVertical="true"
+                    android:text="请选择商户类型"
+                    android:textColor="@color/tv_purple" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/arrow_down" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shanghu_address"
+                style="@style/rl_item"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    style="@style/tv_14_gray_color"
+                    android:layout_centerVertical="true"
+                    android:text="所在地区"
+                    android:textColor="@color/tv_purple" />
+                
+                <TextView
+            android:id="@+id/shanghu_address_tv"
+            style="@style/tv_14_gray_color"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/tv_purple" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/arrow_down" />
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:gravity="left|top"
+                android:hint="详细街道地址"
+                android:maxLength="400"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/tv_purple"
+                android:textColorHint="@color/tv_purple"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/tv_14_gray_color"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="商铺名称" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入商铺名称"
+                    android:maxLength="20"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/tv_purple"
+                    android:textColorHint="@color/tv_purple"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/tv_14_gray_color"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="联系人" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入联系人姓名"
+                    android:inputType="text"
+                    android:maxLength="5"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/tv_purple"
+                    android:textColorHint="@color/tv_purple"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/tv_14_gray_color"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="联系电话" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入联系人电话"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/tv_purple"
+                    android:textColorHint="@color/tv_purple"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/tv_14_gray_color"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="营业执照(选填)" />
+
+                <TextView
+                    style="@style/tv_14_gray_color"
+                    android:layout_centerInParent="true"
+                    android:text="未上传"
+                    android:textColor="@color/tv_purple" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/wmy_ts_07"
+                    android:text="点击上传"
+                    android:textColor="@color/tv_purple"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white" >
+
+                <TextView
+                    style="@style/tv_14_gray_color"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="法人身份证(选填)" />
+
+                <TextView
+                    style="@style/tv_14_gray_color"
+                    android:layout_centerInParent="true"
+                    android:text="未上传"
+                    android:textColor="@color/tv_purple" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/wmy_ts_07"
+                    android:text="点击上传"
+                    android:textColor="@color/tv_purple"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white" >
+
+        <Button
+            android:id="@+id/shanghu_btn"
+            style="@style/green_btn"
+            android:text="立即申请" />
+    </RelativeLayout>
+
+</LinearLayout>

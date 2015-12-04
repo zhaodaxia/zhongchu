@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/linear_style" >
+
+    <!-- 顶部 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/main_color"
+        android:paddingRight="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="goback"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/top_back" />
+        </RelativeLayout>
+
+        <!-- 扫描 -->
+
+        <LinearLayout
+            android:id="@+id/llScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:background="@drawable/scan_home" />
+
+            <TextView
+                style="@style/tv_14_main_color"
+                android:layout_marginTop="3dp"
+                android:text="扫一扫" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/llScan"
+            android:layout_toRightOf="@id/rl_back"
+            android:background="@drawable/edit_back"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@+id/tvVe"
+                style="@style/tv_14_gray_color"
+                android:layout_centerVertical="true"
+                android:background="@drawable/serch_03"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="蔬菜" />
+
+            <ImageView
+                android:id="@+id/ivSearch"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/search" />
+            
+            <EditText 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tvVe"
+                android:layout_toLeftOf="@id/ivSearch"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:hint="请输入商品名称"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:background="@null"
+                android:textColor="#919191"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        
+        <TextView style="@style/tv_14_black_color"
+            android:text="热门搜索"
+            android:drawableLeft="@drawable/hot_s"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="10dp"/>
+        
+    </LinearLayout>
+    
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+        
+        <TextView style="@style/tv_14_black_color"
+            android:text="历史搜索"
+            android:drawableLeft="@drawable/history_s"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="10dp"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

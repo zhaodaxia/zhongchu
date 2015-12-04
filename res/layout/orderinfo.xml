@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/linear_style" >
+
+    <include layout="@layout/title_act_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="@null" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/orderinfo_rl1"
+                style="@style/rl_item"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    style="@style/me_iv_style"
+                    android:src="@drawable/wsxx_03" />
+
+                <TextView
+                    style="@style/yang_rl_tv"
+                    android:text="用车时间" />
+
+                <TextView
+                    android:id="@+id/orderinfo_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:textColor="@color/tv_gray"
+                    android:textSize="14sp" />
+
+                <ImageView style="@style/yang_arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/orderinfo_rl2"
+                style="@style/rl_item"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    style="@style/me_iv_style"
+                    android:src="@drawable/wsxx_06" />
+
+                <TextView
+                    style="@style/yang_rl_tv"
+                    android:text="选择常用路线" />
+
+                <ImageView style="@style/yang_arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/orderinfo_rl3"
+                style="@style/rl_item"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    style="@style/me_iv_style"
+                    android:src="@drawable/wsxx_08" />
+
+                <TextView
+                    style="@style/yang_rl_tv"
+                    android:text="请输入始发地" />
+
+                <ImageView style="@style/yang_arrow_right" />
+            </RelativeLayout>
+
+            <View style="@style/view_line" />
+
+            <RelativeLayout
+                android:id="@+id/orderinfo_rl4"
+                style="@style/rl_item" >
+
+                <ImageView
+                    style="@style/me_iv_style"
+                    android:src="@drawable/tx_03" />
+
+                <TextView
+                    style="@style/yang_rl_tv"
+                    android:text="发货人" />
+
+                <ImageView style="@style/yang_arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/orderinfo_rl5"
+                style="@style/rl_item"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    style="@style/me_iv_style"
+                    android:src="@drawable/lx_10" />
+
+                <TextView
+                    style="@style/yang_rl_tv"
+                    android:text="请输入目的地" />
+
+                <ImageView style="@style/yang_arrow_right" />
+            </RelativeLayout>
+
+            <View style="@style/view_line" />
+
+            <RelativeLayout
+                android:id="@+id/orderinfo_rl6"
+                style="@style/rl_item" >
+
+                <ImageView
+                    style="@style/me_iv_style"
+                    android:src="@drawable/tx_03" />
+
+                <TextView
+                    style="@style/yang_rl_tv"
+                    android:text="收货人" />
+
+                <ImageView style="@style/yang_arrow_right" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/checked_button_bg2"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="需要搬运\n(与司机协议)" />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/checked_button_bg2"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="回单带回\n（免费）" />
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/checked_button_bg2"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="代收贷款\n（免费）" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/orderinfo_rl7"
+                style="@style/rl_item"
+                android:layout_marginTop="10dp" >
+
+                <ImageView
+                    style="@style/me_iv_style"
+                    android:src="@drawable/wsxx_20" />
+
+                <TextView
+                    style="@style/yang_rl_tv"
+                    android:text="给司机留言" />
+
+                <ImageView style="@style/yang_arrow_right" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/orderinfo_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/tv_14_gray_color"
+                        android:text="预估价:" />
+
+                    <TextView
+                        style="@style/tv_14_gray_color"
+                        android:text="156元"
+                        android:textColor="#f99900"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/tv_12_gray_color"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="实际费用可能因实际行驶里程、等候时间等因素有所误差" />
+
+                <TextView
+                    style="@style/tv_12_gray_color"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/yhpl_36"
+                    android:text="查看等候时间计费方式"
+                    android:textColor="#1c425a" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white" >
+
+        <Button
+            android:id="@+id/orderinfo_btn"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/pj_05"
+            android:text="立即下单"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

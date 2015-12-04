@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    android:paddingBottom="10dp">
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_margin="10dp"
+	    android:gravity="center_vertical"
+	    >
+	    <TextView 
+	        style="@style/tv_14_black_color"
+	        android:text="已完成"
+	        />
+	    <View 
+	        android:layout_weight="1"
+	        android:layout_width="0dp"
+	        android:layout_height="0dp"
+	        />
+	    <TextView 
+	        style="@style/tv_12_gray_color"
+	        android:text="实际费用：146元"
+	        />
+	</LinearLayout>
+	
+	<View 
+	    style="@style/divild"
+	    />
+	<LinearLayout 
+	    style="@style/ll_item"
+	    >
+	    <ImageView
+          style="@style/dong_iv_style"
+          android:src="@drawable/wsxx_08" />
+		<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    >
+	    <TextView 
+	        style="@style/tv_12_gray_color"
+	        android:text="中国·梦古-上海西虹桥创意产业园"
+	        />
+	   	<TextView 
+	        style="@style/tv_12_gray_color"
+	        android:text="发货人：李晓明    133333333"
+	        />
+		</LinearLayout>
+
+	</LinearLayout>
+	
+		<LinearLayout 
+	    style="@style/ll_item"
+	    >
+	    <ImageView
+          style="@style/dong_iv_style"
+          android:src="@drawable/lx_10" />
+		<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    >
+	    <TextView 
+	        style="@style/tv_12_gray_color"
+	        android:text="松江区沪松公路1177号佳预信息科技大厦D座7楼"
+	        />
+	   	<TextView 
+	        style="@style/tv_12_gray_color"
+	        android:text="收货人：张志远    133333333"
+	        />
+		</LinearLayout>
+
+	</LinearLayout>
+	
+	<LinearLayout 
+	    style="@style/ll_item"
+	    >
+	    <ImageView
+          style="@style/dong_iv_style"
+          android:src="@drawable/hd_07" />
+
+	   	<TextView 
+	        style="@style/tv_12_gray_color"
+	        android:text="小型面包车"
+	        />
+
+	</LinearLayout>
+	
+		<LinearLayout 
+	    style="@style/ll_item"
+	    >
+	    <ImageView
+          style="@style/dong_iv_style"
+          android:src="@drawable/hd_10" />
+
+	    <TextView 
+	        style="@style/tv_12_gray_color"
+	        android:text="2015-10-30 18:01"
+	        />
+
+
+	</LinearLayout>
+</LinearLayout>
